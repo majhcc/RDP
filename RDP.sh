@@ -1,9 +1,9 @@
 #! /bin/bash
-printf "Installing RDP-ARABS Be Patience... " >&2
+printf "Installing RDP Be Patience... " >&2
 {
 sudo useradd -m ALOK
 sudo adduser ALOK sudo
-echo 'ALOK:arabs' | sudo chpasswd
+echo 'ALOK:1001' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
@@ -32,3 +32,4 @@ then
 else
     printf "\n\nError Occured " >&2
 fi
+© 2021 GitHub, Inc.
